@@ -22,6 +22,8 @@ jobs:
       - name: Install dependencies
         run: poetry install
       - name: pyre
-        run: poetry run pyre
+        run: | 
+          poetry run pyre init
+          poetry run pyre
       - name: pytest
         run: poetry run pytest

@@ -139,4 +139,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# pyre
+.pyre_configuration
+.watchmanconfig
 

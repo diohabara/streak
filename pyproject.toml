@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "streak"
+version = "0.1.0"
+description = ""
+authors = ["diohabara <diohabara@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mypy = "^0.790"
+flask = "^1.1.2"
+requests = "^2.24.0"
+pylint = "^2.6.0"
+pyre-check = "^0.0.57"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

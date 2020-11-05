@@ -1,0 +1,8 @@
+{
+  "binary": "/Users/jio/Library/Caches/pypoetry/virtualenvs/streak-oRVUviOR-py3.9/bin/pyre.bin",
+  "source_directories": [
+    "."
+  ],
+  "taint_models_path": "/Users/jio/Library/Caches/pypoetry/virtualenvs/streak-oRVUviOR-py3.9/lib",
+  "typeshed": "/Users/jio/Library/Caches/pypoetry/virtualenvs/streak-oRVUviOR-py3.9/lib/pyre_check/typeshed"
+}

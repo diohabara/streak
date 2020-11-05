@@ -1,5 +1,7 @@
 # streak
 
+![CI](https://github.com/diohabara/streak/workflows/CI/badge.svg)
+
 ## Minimal dependencies
 
 - `pyenv`

@@ -20,9 +20,5 @@ jobs:
           poetry-version: ${{ matrix.poetry-version }}
       - name: Install dependencies
         run: poetry install
-      - name: pyre
-        run: | 
-          poetry run pyre init
-          poetry run pyre
       - name: pytest
         run: poetry run pytest

@@ -1,5 +1,5 @@
 from streak import __version__
-from streak.crawl_leetcode import LeetCodeUser
+from streak.crawler import LeetCodeUser
 
 user1 = LeetCodeUser("user1", "password")
 

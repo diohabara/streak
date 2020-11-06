@@ -20,7 +20,5 @@ jobs:
           poetry-version: ${{ matrix.poetry-version }}
       - name: Install dependencies
         run: poetry install
-      - name: mypy
-        run: poetry run mypy streak tests
       - name: pytest
         run: poetry run pytest

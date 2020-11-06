@@ -15,12 +15,6 @@
 poetry install 
 ```
 
-- Type-check
-
-```sh
-poetry run mypy streak tests
-```
-
 - Test
 
 ```sh

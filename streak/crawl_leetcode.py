@@ -8,18 +8,18 @@ USER_AGENT = (
 LEETCODE_API_URL = 'https://leetcode.com/api/problems/all/'
 
 class LeetCodeUser():
-    def __init__(self, user_id: str, password: str) -> None:
+    def __init__(self, user_id, password):
         self.user_id = user_id
         self.password = password
 
-    def get_question_list(self) -> list[str]:
+    def get_question_list(self):
         session = requests.session()
         headers = {'User-Agent': USER_AGENT, 'Connection': 'keep-alive'}
         response = requests.get(LEETCODE_API_URL, headers = headers, timeout = 10)
         parsed_res = json.loads(response.content.decode('utf-8'))
         return parsed_res['stat_status_pairs']
 
-    def get_ac_frontend_ids(self) -> list[str]:
+    def get_ac_frontend_ids(self):
         question_list = self.get_question_list()
         ac_frontend_ids = []
         q_lambda = lambda x: x['stat']['frontend_question_id']
@@ -29,7 +29,7 @@ class LeetCodeUser():
                 ac_frontend_ids.append(q_id)
         return ac_frontend_ids
 
-    def get_non_ac_frontend_ids(self) -> list[str]:
+    def get_non_ac_frontend_ids(self):
         question_list = self.get_question_list()
         non_ac_frontend_ids = []
         q_lambda = lambda x: x['stat']['frontend_question_id']

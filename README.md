@@ -15,7 +15,13 @@
 poetry install 
 ```
 
-- Test the app
+- Type-check
+
+```sh
+poetry run mypy streak tests
+```
+
+- Test
 
 ```sh
 poetry run pytest

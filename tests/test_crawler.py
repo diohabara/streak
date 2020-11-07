@@ -1,10 +1,6 @@
-from streak import __version__
 from streak.crawler import LeetCodeUser
 
 user1 = LeetCodeUser("user1", "password")
-
-def test_version():
-    assert __version__ == '0.1.0'
 
 def test_get_ac_ids():
     expected = user1.get_ac_frontend_ids()
